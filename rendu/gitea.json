@@ -1,0 +1,376 @@
+{
+    "repository":  "d4_3/app-repas-frontend",
+    "exported_at":  "2026-11-22T23:34:45+00:00",
+    "teams":  [
+                  {
+                      "name":  "Owners",
+                      "permission":  "owner",
+                      "units_map":  {
+                                        "repo.ext_issues":  "owner",
+                                        "repo.issues":  "owner",
+                                        "repo.releases":  "owner",
+                                        "repo.ext_wiki":  "owner",
+                                        "repo.actions":  "owner",
+                                        "repo.pulls":  "owner",
+                                        "repo.wiki":  "owner",
+                                        "repo.projects":  "owner",
+                                        "repo.packages":  "owner",
+                                        "repo.code":  "owner"
+                                    },
+                      "members":  [
+                                      {
+                                          "login":  "houda_elamrani",
+                                          "full_name":  ""
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "devA",
+                      "permission":  "none",
+                      "units_map":  {
+                                        "repo.issues":  "write",
+                                        "repo.wiki":  "write",
+                                        "repo.projects":  "write",
+                                        "repo.packages":  "none",
+                                        "repo.actions":  "write",
+                                        "repo.code":  "write",
+                                        "repo.pulls":  "write",
+                                        "repo.releases":  "write",
+                                        "repo.ext_wiki":  "read",
+                                        "repo.ext_issues":  "read"
+                                    },
+                      "members":  [
+
+                                  ]
+                  },
+                  {
+                      "name":  "DEVB",
+                      "permission":  "none",
+                      "units_map":  {
+                                        "repo.ext_wiki":  "read",
+                                        "repo.ext_issues":  "read",
+                                        "repo.packages":  "none",
+                                        "repo.actions":  "write",
+                                        "repo.issues":  "write",
+                                        "repo.releases":  "write",
+                                        "repo.projects":  "write",
+                                        "repo.code":  "write",
+                                        "repo.pulls":  "write",
+                                        "repo.wiki":  "write"
+                                    },
+                      "members":  [
+
+                                  ]
+                  },
+                  {
+                      "name":  "developers",
+                      "permission":  "none",
+                      "units_map":  {
+                                        "repo.code":  "write",
+                                        "repo.releases":  "write",
+                                        "repo.wiki":  "read",
+                                        "repo.ext_wiki":  "read",
+                                        "repo.projects":  "write",
+                                        "repo.issues":  "write",
+                                        "repo.pulls":  "write",
+                                        "repo.ext_issues":  "read",
+                                        "repo.packages":  "read",
+                                        "repo.actions":  "read"
+                                    },
+                      "members":  [
+                                      {
+                                          "login":  "devA",
+                                          "full_name":  ""
+                                      },
+                                      {
+                                          "login":  "devb",
+                                          "full_name":  ""
+                                      }
+                                  ]
+                  }
+              ],
+    "branch_protections":  [
+                               {
+                                   "rule_name":  "main",
+                                   "enable_push":  false,
+                                   "required_approvals":  1,
+                                   "block_on_rejected_reviews":  false,
+                                   "dismiss_stale_approvals":  false,
+                                   "enable_status_check":  false,
+                                   "status_check_contexts":  [
+
+                                                             ]
+                               }
+                           ],
+    "labels":  [
+                   "epic",
+                   "task",
+                   "user-story"
+               ],
+    "milestones":  [
+                       {
+                           "title":  "Sprint 1",
+                           "state":  "open",
+                           "open_issues":  6,
+                           "closed_issues":  0,
+                           "due_on":  "2026-11-29T23:59:59Z",
+                           "closed_at":  null
+                       }
+                   ],
+    "issues":  [
+                   {
+                       "number":  2,
+                       "title":  "Client",
+                       "state":  "open",
+                       "user":  "devA",
+                       "assignees":  [
+
+                                     ],
+                       "labels":  [
+                                      "epic"
+                                  ],
+                       "milestone":  "Sprint 1",
+                       "created_at":  "2026-11-22T22:39:17Z",
+                       "closed_at":  null,
+                       "body":  "Epic : Gestion des comptes clients.\r\n\r\nCette fonctionnalité regroupe les User Stories liées à l\u0027inscription et à la connexion des clients.",
+                       "comments":  [
+
+                                    ]
+                   },
+                   {
+                       "number":  3,
+                       "title":  "Inscription des clients non enregistrés",
+                       "state":  "open",
+                       "user":  "devA",
+                       "assignees":  [
+
+                                     ],
+                       "labels":  [
+                                      "user-story"
+                                  ],
+                       "milestone":  "Sprint 1",
+                       "created_at":  "2026-11-22T22:41:07Z",
+                       "closed_at":  null,
+                       "body":  "En tant que client non enregistré, je veux m\u0027inscrire avec mon nom, mon adresse e-mail et un mot de passe afin de créer un compte.- [ ] L\u0027utilisateur peut saisir son nom.\r\n- [x] L\u0027utilisateur peut saisir son adresse e-mail.\r\n- [x] L\u0027adresse e-mail doit être valide.\r\n- [x] Le mot de passe doit contenir au moins 8 caractères.\r\n- [ ] Un message de confirmation doit être affiché après l\u0027inscription.",
+                       "comments":  [
+
+                                    ]
+                   },
+                   {
+                       "number":  4,
+                       "title":  "Connexion des clients inscrits",
+                       "state":  "open",
+                       "user":  "devA",
+                       "assignees":  [
+
+                                     ],
+                       "labels":  [
+                                      "user-story"
+                                  ],
+                       "milestone":  "Sprint 1",
+                       "created_at":  "2026-11-22T22:41:54Z",
+                       "closed_at":  null,
+                       "body":  "En tant que client inscrit, je veux me connecter avec mon adresse e-mail et mon mot de passe afin d\u0027accéder à mon compte.\r\n- [ ] L\u0027utilisateur peut saisir son adresse e-mail.\r\n- [ ] L\u0027utilisateur peut saisir son mot de passe.\r\n- [ ] Les informations doivent être vérifiées.\r\n- [ ] Un message de confirmation doit être affiché après la connexion.",
+                       "comments":  [
+
+                                    ]
+                   },
+                   {
+                       "number":  5,
+                       "title":  "Création de la page d\u0027inscription",
+                       "state":  "open",
+                       "user":  "devA",
+                       "assignees":  [
+                                         "devA"
+                                     ],
+                       "labels":  [
+                                      "task"
+                                  ],
+                       "milestone":  "Sprint 1",
+                       "created_at":  "2026-11-22T22:42:21Z",
+                       "closed_at":  null,
+                       "body":  "Développer le composant React permettant à un nouveau client de saisir son nom, son adresse e-mail et son mot de passe.",
+                       "comments":  [
+
+                                    ]
+                   },
+                   {
+                       "number":  6,
+                       "title":  "Création de la page de connexion",
+                       "state":  "open",
+                       "user":  "devA",
+                       "assignees":  [
+                                         "devb"
+                                     ],
+                       "labels":  [
+                                      "task"
+                                  ],
+                       "milestone":  "Sprint 1",
+                       "created_at":  "2026-11-22T22:42:53Z",
+                       "closed_at":  null,
+                       "body":  "Développer le composant React permettant à un client inscrit de saisir son adresse e-mail et son mot de passe.",
+                       "comments":  [
+
+                                    ]
+                   }
+               ],
+    "pulls":  [
+                  {
+                      "number":  1,
+                      "title":  "Ajoute le template d\u0027issue User story",
+                      "state":  "open",
+                      "user":  "houda_elamrani",
+                      "head":  "chore/issue-template",
+                      "base":  "main",
+                      "labels":  [
+                                     "task"
+                                 ],
+                      "milestone":  "Sprint 1",
+                      "requested_reviewers":  [
+                                                  "devA",
+                                                  "devb"
+                                              ],
+                      "merged":  false,
+                      "merged_by":  {
+
+                                    },
+                      "merged_at":  null,
+                      "merge_commit_sha":  null,
+                      "created_at":  "2026-11-22T21:39:42Z",
+                      "closed_at":  null,
+                      "body":  "",
+                      "statuses":  [
+
+                                   ],
+                      "commits":  [
+                                      {
+                                          "sha":  "2cb2529f569958141e6533a0dc37eee8a0555a27",
+                                          "author":  "houda",
+                                          "email":  "elamranihouda540@gmail.com",
+                                          "date":  "2026-11-22T20:58:41Z",
+                                          "message":  "Ajoute le template d\u0027issue User story"
+                                      }
+                                  ],
+                      "reviews":  [
+                                      {
+                                          "user":  "devb",
+                                          "state":  "APPROVED",
+                                          "submitted_at":  "2026-11-22T23:10:12Z",
+                                          "commit_id":  "2cb2529f569958141e6533a0dc37eee8a0555a27",
+                                          "stale":  false,
+                                          "dismissed":  true,
+                                          "body":  "",
+                                          "comments":  [
+
+                                                       ]
+                                      },
+                                      {
+                                          "user":  "devA",
+                                          "state":  "APPROVED",
+                                          "submitted_at":  "2026-11-22T23:10:52Z",
+                                          "commit_id":  "2cb2529f569958141e6533a0dc37eee8a0555a27",
+                                          "stale":  false,
+                                          "dismissed":  true,
+                                          "body":  "",
+                                          "comments":  [
+
+                                                       ]
+                                      },
+                                      {
+                                          "user":  "devA",
+                                          "state":  "APPROVED",
+                                          "submitted_at":  "2026-11-22T23:13:20Z",
+                                          "commit_id":  "2cb2529f569958141e6533a0dc37eee8a0555a27",
+                                          "stale":  false,
+                                          "dismissed":  false,
+                                          "body":  "",
+                                          "comments":  [
+
+                                                       ]
+                                      },
+                                      {
+                                          "user":  "devb",
+                                          "state":  "APPROVED",
+                                          "submitted_at":  "2026-11-22T23:13:42Z",
+                                          "commit_id":  "2cb2529f569958141e6533a0dc37eee8a0555a27",
+                                          "stale":  false,
+                                          "dismissed":  true,
+                                          "body":  "",
+                                          "comments":  [
+
+                                                       ]
+                                      },
+                                      {
+                                          "user":  "devb",
+                                          "state":  "APPROVED",
+                                          "submitted_at":  "2026-11-22T23:26:29Z",
+                                          "commit_id":  "2cb2529f569958141e6533a0dc37eee8a0555a27",
+                                          "stale":  false,
+                                          "dismissed":  false,
+                                          "body":  "",
+                                          "comments":  [
+
+                                                       ]
+                                      }
+                                  ],
+                      "comments":  [
+
+                                   ]
+                  },
+                  {
+                      "number":  7,
+                      "title":  "Ajoute le rendu final du TP3",
+                      "state":  "open",
+                      "user":  "devA",
+                      "head":  "chore/rendu-tp3",
+                      "base":  "main",
+                      "labels":  [
+
+                                 ],
+                      "milestone":  {
+
+                                    },
+                      "requested_reviewers":  [
+                                                  "devb"
+                                              ],
+                      "merged":  false,
+                      "merged_by":  {
+
+                                    },
+                      "merged_at":  null,
+                      "merge_commit_sha":  null,
+                      "created_at":  "2026-11-22T23:28:11Z",
+                      "closed_at":  null,
+                      "body":  "",
+                      "statuses":  [
+
+                                   ],
+                      "commits":  [
+                                      {
+                                          "sha":  "7a7fe74e5aee98a26000ad7d3dc5e911432601ff",
+                                          "author":  "houda",
+                                          "email":  "elamranihouda540@gmail.com",
+                                          "date":  "2026-11-22T23:23:23Z",
+                                          "message":  "Ajoute le rendu final du TP3"
+                                      }
+                                  ],
+                      "reviews":  [
+                                      {
+                                          "user":  "devb",
+                                          "state":  "APPROVED",
+                                          "submitted_at":  "2026-11-22T23:28:35Z",
+                                          "commit_id":  "7a7fe74e5aee98a26000ad7d3dc5e911432601ff",
+                                          "stale":  false,
+                                          "dismissed":  false,
+                                          "body":  "",
+                                          "comments":  [
+
+                                                       ]
+                                      }
+                                  ],
+                      "comments":  [
+
+                                   ]
+                  }
+              ]
+}
