@@ -1,0 +1,6 @@
+body { margin: 0; font-family: system-ui, sans-serif; color: #222; }
+header { background: #d84315; color: white; padding: 12px 24px; }
+header h1 { margin: 0; font-size: 1.5rem; }
+main { padding: 24px; max-width: 720px; }
+form { display: grid; gap: 8px; max-width: 320px; margin-top: 16px; }
+input, button { padding: 8px; font-size: 1rem; }
